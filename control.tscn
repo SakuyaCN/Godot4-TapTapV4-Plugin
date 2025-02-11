@@ -1,0 +1,70 @@
+[gd_scene load_steps=2 format=3 uid="uid://du1jxc7p1fpap"]
+
+[ext_resource type="Script" uid="uid://dnbhwwu5cm8pg" path="res://control.gd" id="1_0fbet"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0fbet")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_right = 191.0
+offset_bottom = 76.0
+text = "调用登录"
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 0
+offset_top = 98.0
+offset_right = 191.0
+offset_bottom = 174.0
+text = "调用防沉迷"
+
+[node name="Button3" type="Button" parent="."]
+layout_mode = 0
+offset_top = 199.0
+offset_right = 191.0
+offset_bottom = 275.0
+text = "退出防沉迷认证"
+
+[node name="Button4" type="Button" parent="."]
+layout_mode = 0
+offset_top = 296.0
+offset_right = 191.0
+offset_bottom = 372.0
+text = "打开动态"
+
+[node name="Button5" type="Button" parent="."]
+layout_mode = 0
+offset_top = 396.0
+offset_right = 191.0
+offset_bottom = 472.0
+text = "打开评价界面"
+
+[node name="Button6" type="Button" parent="."]
+layout_mode = 0
+offset_top = 497.0
+offset_right = 191.0
+offset_bottom = 573.0
+text = "更新游戏"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 199.0
+offset_top = 10.0
+offset_right = 648.0
+offset_bottom = 573.0
+theme_override_font_sizes/normal_font_size = 32
+bbcode_enabled = true
+scroll_following = true
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_button_4_pressed"]
+[connection signal="pressed" from="Button5" to="." method="_on_button_5_pressed"]
+[connection signal="pressed" from="Button6" to="." method="_on_button_6_pressed"]
